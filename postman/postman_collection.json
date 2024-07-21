@@ -1,0 +1,291 @@
+{
+	"info": {
+		"_postman_id": "c8503a22-bf00-4045-9f1c-35308a5f46e2",
+		"name": "Node API Mana",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5306925"
+	},
+	"item": [
+		{
+			"name": "v1",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/users?api_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTE0YjdhZTc4NjRjM2U4YzhkODU1ZCIsImlhdCI6MTcyMTUyNzQ1MCwiZXhwIjoxNzIxNjEzODUwfQ.Aj45EDthGKCI7wllSy7Y_g8zWLKR4Qk44Cx3ERuaEP8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users"
+									],
+									"query": [
+										{
+											"key": "api_token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTE0YjdhZTc4NjRjM2U4YzhkODU1ZCIsImlhdCI6MTcyMTUyNzQ1MCwiZXhwIjoxNzIxNjEzODUwfQ.Aj45EDthGKCI7wllSy7Y_g8zWLKR4Qk44Cx3ERuaEP8"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "single",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/users/65a14b7ae7864c3e8c8d855d?api_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTE0YjdhZTc4NjRjM2U4YzhkODU1ZCIsImlhdCI6MTcyMTUyNzQ1MCwiZXhwIjoxNzIxNjEzODUwfQ.Aj45EDthGKCI7wllSy7Y_g8zWLKR4Qk44Cx3ERuaEP8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"65a14b7ae7864c3e8c8d855d"
+									],
+									"query": [
+										{
+											"key": "api_token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTE0YjdhZTc4NjRjM2U4YzhkODU1ZCIsImlhdCI6MTcyMTUyNzQ1MCwiZXhwIjoxNzIxNjEzODUwfQ.Aj45EDthGKCI7wllSy7Y_g8zWLKR4Qk44Cx3ERuaEP8"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": " soheil ghs",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "soheil2@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "987654321",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/users?api_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTE0YjdhZTc4NjRjM2U4YzhkODU1ZCIsImlhdCI6MTcyMTUyNzQ1MCwiZXhwIjoxNzIxNjEzODUwfQ.Aj45EDthGKCI7wllSy7Y_g8zWLKR4Qk44Cx3ERuaEP8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users"
+									],
+									"query": [
+										{
+											"key": "api_token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTE0YjdhZTc4NjRjM2U4YzhkODU1ZCIsImlhdCI6MTcyMTUyNzQ1MCwiZXhwIjoxNzIxNjEzODUwfQ.Aj45EDthGKCI7wllSy7Y_g8zWLKR4Qk44Cx3ERuaEP8"
+										},
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "soheil ghs2",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "soheil2@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "987654321",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/users/669c8b400dfa25402854ed31?api_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTE0YjdhZTc4NjRjM2U4YzhkODU1ZCIsImlhdCI6MTcyMTU0MjAyOSwiZXhwIjoxNzIxNjI4NDI5fQ.QcNeDRHTXoyIR9m6uQ7pNiyJeX1AvtXXBv2uKnR8LY0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"669c8b400dfa25402854ed31"
+									],
+									"query": [
+										{
+											"key": "api_token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTE0YjdhZTc4NjRjM2U4YzhkODU1ZCIsImlhdCI6MTcyMTU0MjAyOSwiZXhwIjoxNzIxNjI4NDI5fQ.QcNeDRHTXoyIR9m6uQ7pNiyJeX1AvtXXBv2uKnR8LY0"
+										},
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/users/669c8b400dfa25402854ed31?api_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTE0YjdhZTc4NjRjM2U4YzhkODU1ZCIsImlhdCI6MTcyMTU0MjAyOSwiZXhwIjoxNzIxNjI4NDI5fQ.QcNeDRHTXoyIR9m6uQ7pNiyJeX1AvtXXBv2uKnR8LY0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"669c8b400dfa25402854ed31"
+									],
+									"query": [
+										{
+											"key": "api_token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YTE0YjdhZTc4NjRjM2U4YzhkODU1ZCIsImlhdCI6MTcyMTU0MjAyOSwiZXhwIjoxNzIxNjI4NDI5fQ.QcNeDRHTXoyIR9m6uQ7pNiyJeX1AvtXXBv2uKnR8LY0"
+										},
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "soheil@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
